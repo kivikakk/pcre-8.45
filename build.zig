@@ -16,6 +16,7 @@ pub fn build(b: *std.Build) void {
         .flags = &[_][]const u8{
             "-Wno-implicit-function-declaration",
             "-DHAVE_CONFIG_H",
+            "-g",
         },
         .files = &[_][]const u8{
             "pcre_byte_order.c",
