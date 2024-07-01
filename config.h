@@ -59,7 +59,7 @@ sure both macros are undefined; an emulation function will then be used. */
 /* #undef HAVE_BITS_TYPE_TRAITS_H */
 
 /* Define to 1 if you have the <bzlib.h> header file. */
-/* #undef HAVE_BZLIB_H */
+#define HAVE_BZLIB_H 1
 
 /* Define to 1 if you have the <dirent.h> header file. */
 #define HAVE_DIRENT_H 1
@@ -149,7 +149,7 @@ sure both macros are undefined; an emulation function will then be used. */
 /* #undef HAVE_WINDOWS_H */
 
 /* Define to 1 if you have the <zlib.h> header file. */
-/* #undef HAVE_ZLIB_H */
+#define HAVE_ZLIB_H 1
 
 /* Define to 1 if you have `_strtoi64'. */
 /* #undef HAVE__STRTOI64 */
@@ -300,7 +300,7 @@ sure both macros are undefined; an emulation function will then be used. */
 
 /* Define to any value to allow pcregrep to be linked with libbz2, so that it
    is able to handle .bz2 files. */
-/* #undef SUPPORT_LIBBZ2 */
+#define SUPPORT_LIBBZ2 /**/
 
 /* Define to any value to allow pcretest to be linked with libedit. */
 /* #undef SUPPORT_LIBEDIT */
@@ -310,13 +310,13 @@ sure both macros are undefined; an emulation function will then be used. */
 
 /* Define to any value to allow pcregrep to be linked with libz, so that it is
    able to handle .gz files. */
-/* #undef SUPPORT_LIBZ */
+#define SUPPORT_LIBZ /**/
 
 /* Define to any value to enable the 16 bit PCRE library. */
-/* #undef SUPPORT_PCRE16 */
+#define SUPPORT_PCRE16 /**/
 
 /* Define to any value to enable the 32 bit PCRE library. */
-/* #undef SUPPORT_PCRE32 */
+#define SUPPORT_PCRE32 /**/
 
 /* Define to any value to enable the 8 bit PCRE library. */
 #define SUPPORT_PCRE8 /**/
@@ -325,13 +325,13 @@ sure both macros are undefined; an emulation function will then be used. */
 /* #undef SUPPORT_PCREGREP_JIT */
 
 /* Define to any value to enable support for Unicode properties. */
-#define SUPPORT_UCP
+#define SUPPORT_UCP /**/
 
 /* Define to any value to enable support for the UTF-8/16/32 Unicode encoding.
    This will work even in an EBCDIC environment, but it is incompatible with
    the EBCDIC macro. That is, PCRE can support *either* EBCDIC code *or*
    ASCII/UTF-8/16/32, but not both at once. */
-#define SUPPORT_UTF
+#define SUPPORT_UTF /**/
 
 /* Define to any value for valgrind support to find invalid memory reads. */
 /* #undef SUPPORT_VALGRIND */
