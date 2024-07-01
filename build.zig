@@ -23,7 +23,6 @@ pub fn build(b: *std.Build) void {
         },
         .files = &[_][]const u8{
             "pcre_byte_order.c",
-            "pcre_chartables.c",
             "pcre_compile.c",
             "pcre_config.c",
             "pcre_dfa_exec.c",
